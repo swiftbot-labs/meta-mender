@@ -10,5 +10,6 @@ SRC_URI:append:rpi:mender-uboot = "${@bb.utils.contains('MENDER_UBOOT_AUTO_CONFI
                                                         '1', \
                                                         '', \
                                                         ' file://0001-configs-rpi-enable-mender-requirements.patch \
+                                                          file://0002-revert-pci-check-region-ranges-are-addressable.patch \
                                                         ', \
                                                         d)}"
